@@ -1,0 +1,41 @@
+body{
+    background-image: url("../images/game.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.jumbotron{
+    background: rgb(62, 62, 85);
+    font-size: 50px;
+    color: white;
+}
+
+.card-header{
+    background: rgb(142, 142, 207); 
+    color: white;
+}
+
+.card-body{
+    background: white;
+}
+
+h3,
+h4{
+    text-align: center;
+}
+
+h4{
+    font-size: 50px;
+}
+
+
+.image{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    
+}
