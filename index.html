@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CrystalsCollector Game</title>
+    
+        
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Reset CSS-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+</head> 
+
+<body>
+
+    <div class="container">
+
+        <!-- Crystal Collector Header -->
+        <div class="jumbotron">
+            <h1 class="text-center"><strong>Crystal Collector </strong></h1>
+        </div>
+
+        <!-- Game Instructions -->
+        <div class="border">
+            <div class="card-header">
+                <h2>Instructions</h2>
+            </div>
+
+            <div class="card-body">
+                <p>1)   You will be given a random number at the start of the game.</p>
+                <p>2)   There are four crystals below. By clicking on a crystal you will            add specific amount of points to your total score.</p>
+                <p>3)   You win the game by matching your total score to random number, you         lose the game if your total score goes above the random number.</p>
+                <p>4)   The value of each crystal is hidden from you until you click on             it.</p>
+                <p>5)   Each time when the game starts, the game will change the values of          each crystal.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- Score to match -->
+            <div class="col-md-6">
+                <div class="card-header">
+                    <h3>Target Score</h3>
+                </div>
+                <div class="card-body">
+                    <h4> 0 </h4>
+                </div>
+            </div>
+
+
+            <!-- Personal Score-->
+            <div class="col-md-6">
+                <div class="card-header">
+                    <h3>Your Score</h3>
+                </div>
+                <div class="card-body">
+                    <h4> 0 </h4>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+        
+
+            <!-- Game Buttons-->
+            <div class="col-md-6">
+                <div class="card-header">
+                    <h3>Game Buttons</h3>
+                </div>
+                <div class="card-body">
+                    <img class="image" src="assets/images/red.png">
+                    <img class="image" src="assets/images/yellow.jpg">
+                    <img class="image" src="assets/images/green.jpeg">
+                    <img class="image" src="assets/images/blue.png">
+                </div>
+            </div>
+
+
+
+            <!-- Wins/Loss tracker-->
+            <div class="col-md-6">
+                <div class="card-header">
+                    <h3>Wins/Losses</h3>
+                </div>
+                <div class="card-body">
+                    <h5> Wins:  </h5>
+                </div>
+                <div class="card-body">
+                    <h5> Losses:  </h5>
+                </div>
+            </div>
+    
+
+
+        </div>
+            
+
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" scr="assets/javascript/game.js"></script>
+
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+</body>
+    
+</html>
