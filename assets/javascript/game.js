@@ -43,7 +43,7 @@ function startGame(){
 startGame();
 
 
-
+//Function to update score based on user clicks and verify win/loss
 function userClick(){
 
     yourScore += userClick.redCrystal || yellowCrystal || greenCrystal || blueCrystal;
@@ -63,7 +63,7 @@ function userClick(){
 };
 
 
-//Function for win/loss verification
+//To create a click function for each crystal and push the value into the user click function
 $(".red-crystal").click(function() {
     userClick(redCrystal);
 });
