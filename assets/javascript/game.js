@@ -3,7 +3,6 @@ var randomScore = 0;
 var yourScore = 0;
 
 //Set variables for crytals
-var crystalValues = [];
 var redCrystal = 0;
 var yellowCrystal = 0;
 var greenCrystal = 0;
@@ -23,7 +22,6 @@ function startGame(){
         $(".random-score").text(randomScore);
 
     yourScore = 0;
-        console.log("Your Score: " + yourScore);
         $(".your-score").text(yourScore);
 
 
@@ -34,48 +32,51 @@ function startGame(){
     blueCrystal = Math.floor(Math.random() * (12 - 1 + 1 )) + 1;
 
     
-    
-    $(".red-crystal").on("click", function(){
-        yourScore = yourScore + redCrystal;
-        $(".your-score").text(yourScore);
-    });
-    $(".yellow-crystal").on("click", function(){
-        yourScore = yourScore + yellowCrystal;
-        $(".your-score").text(yourScore);
-    });
-    $(".green-crystal").on("click", function(){
-        yourScore = yourScore + greenCrystal;
-        $(".your-score").text(yourScore);
-    });
-    $(".blue-crystal").on("click", function(){
-        yourScore = yourScore + blueCrystal;
-        $(".your-score").text(yourScore);
-    });
-
 
         console.log("Red Value: " + redCrystal);
-        console.log("Red Value: " + yellowCrystal);
-        console.log("Red Value: " + greenCrystal);
-        console.log("Red Value: " + blueCrystal);
+        console.log("Yellow Value: " + yellowCrystal);
+        console.log("Green Value: " + greenCrystal);
+        console.log("Blue Value: " + blueCrystal);
+        
 
 };
 startGame();
 
-//Function for win/loss verification
-function endGame(){
 
-    if(yourScore === randomScore){
-        alert("You Win!");
-        wins++;
-        $(".win-count").text(wins);
-        startGame();
-    }
-    else if (yourScore > randomScore){
-        alert("Game Over!");
-        losses++;
-        $(".loss-count").text(losses);
-        startGame();
-    }
+
+function userClick(){
+
+    yourScore += userClick.redCrystal || yellowCrystal || greenCrystal || blueCrystal;
+    $(".your-score").text(yourScore);
+        if(yourScore === randomScore){
+            alert("You Win!");
+            wins++;
+            $(".win-count").text(wins);
+            startGame();
+        }
+        else if (yourScore > randomScore){
+            alert("Game Over!");
+            losses++;
+            $(".loss-count").text(losses);
+            startGame();
+        }
 };
 
 
+//Function for win/loss verification
+$(".red-crystal").click(function() {
+    userClick(redCrystal);
+});
+  
+$(".yellow-crystal").click(function() {
+    userClick(yellowCrystal);
+});
+  
+$(".green-crystal").click(function() {
+    userClick(greenCrystal);
+});
+  
+$(".blue-crystal").click(function() {
+    userClick(blueCrystal);
+});
+  
